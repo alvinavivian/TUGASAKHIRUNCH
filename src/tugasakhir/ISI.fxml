@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="789.0" style="-fx-background-color: #930e3f;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhir.ISIController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="118.0" prefHeight="69.0" prefWidth="167.0" style="-fx-border-color: #ffffff;">
+         <children>
+            <RadioButton fx:id="id_siswa" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#siswa" text="Siswa" textFill="WHITE">
+               <font>
+                  <Font name="GothamRounded-Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="kategorisiswa" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="id_mahasiswa" layoutX="23.0" layoutY="41.0" mnemonicParsing="false" onAction="#mahasiswa" text="Mahasiswa" textFill="WHITE" toggleGroup="$kategorisiswa">
+               <font>
+                  <Font name="GothamRounded-Bold" size="12.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="195.0" layoutY="118.0" prefHeight="260.0" prefWidth="313.0" style="-fx-background-color: #a9f229;">
+         <children>
+            <CheckBox fx:id="id_dkv" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#dkv" prefHeight="20.0" prefWidth="134.0" text="DKV" textFill="#ffa100" wrapText="true">
+               <font>
+                  <Font name="GothamRounded-Bold" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="id_filmatografi" layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#film" prefHeight="20.0" prefWidth="134.0" text="FILMATOGRAFI" textFill="#ffa100" wrapText="true">
+               <font>
+                  <Font name="GothamRounded-Bold" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="id_multimedia" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#MM" prefHeight="20.0" prefWidth="134.0" text="MULTIMEDIA" textFill="#ffa100" wrapText="true">
+               <font>
+                  <Font name="GothamRounded-Bold" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="id_animasi" layoutX="14.0" layoutY="165.0" mnemonicParsing="false" onAction="#animasi" prefHeight="20.0" prefWidth="134.0" text="ANIMASI" textFill="#ffa100" wrapText="true">
+               <font>
+                  <Font name="GothamRounded-Bold" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="id_design" layoutX="14.0" layoutY="209.0" mnemonicParsing="false" onAction="#design" prefHeight="20.0" prefWidth="134.0" text="DESIGN GRAFIS" textFill="#ffa100" wrapText="true">
+               <font>
+                  <Font name="GothamRounded-Bold" size="13.0" />
+               </font>
+            </CheckBox>
+         </children>
+         <effect>
+            <DropShadow color="#00000092" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="213.0" layoutY="85.0" text="Pilih Jurusannya" textFill="WHITE">
+         <font>
+            <Font name="GothamRounded-Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="537.0" layoutY="85.0" text="Piihan Anda" textFill="WHITE">
+         <font>
+            <Font name="GothamRounded-Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="pilihjurusan" layoutX="296.0" layoutY="401.0" mnemonicParsing="false" onAction="#pilihjurus" prefHeight="33.0" prefWidth="104.0" text="Pilih Jurusan" />
+      <Label layoutX="30.0" layoutY="86.0" text="Saya adalah" textFill="WHITE">
+         <font>
+            <Font name="GothamRounded-Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="hasil" layoutX="537.0" layoutY="118.0" prefHeight="260.0" prefWidth="218.0" />
+      <Label layoutX="213.0" layoutY="25.0" text="Silahkan Diisi dulu kawan" textFill="WHITE">
+         <font>
+            <Font name="GothamRounded-Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="next" layoutX="594.0" layoutY="398.0" mnemonicParsing="false" onAction="#next" prefHeight="33.0" prefWidth="104.0" text="Selanjutya" />
+   </children>
+</AnchorPane>
